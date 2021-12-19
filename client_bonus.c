@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   client.c                                           :+:      :+:    :+:   */
+/*   client_bonus.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ie-laabb <ie-laabb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/12 19:47:15 by ie-laabb          #+#    #+#             */
-/*   Updated: 2021/12/18 23:32:47 by ie-laabb         ###   ########.fr       */
+/*   Created: 2021/12/18 21:27:26 by ie-laabb          #+#    #+#             */
+/*   Updated: 2021/12/18 23:33:06 by ie-laabb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minitalk.h"
+#include "minitalk_bonus.h"
 
 int	rest_nbr(const char *str, int sign, int i)
 {
@@ -101,6 +101,7 @@ int	main(int argc, char **argv)
 			i++;
 		}
 		str_to_char(ft_atoi(argv[1]), argv[2]);
+		write(1, "Message received from server\n", 29);
 	}
 	else
 	{
